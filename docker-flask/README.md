@@ -12,7 +12,7 @@ docker image ls
 
 To delete the image
 ```
-docker rmi <image_id>
+docker image rm -f <image_id>
 ```
 
 To run the flask app in docker and open browser at localhost:5000 to view the web app
@@ -37,5 +37,5 @@ docker exec -ti <container_id> /bin/bash
 
 To delete the container
 ```
-docker rm <container_id>
+docker image rm -f <container_id>
 ```
