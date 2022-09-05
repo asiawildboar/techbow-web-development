@@ -1,0 +1,44 @@
+version: "3.7"
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  producer:
+    depends_on:
+      - rabbitmq
+    image: producer:v1
+    ports:
+      - "5000:5000"
+    links:
+      - "rabbitmq:rabbitmq-host"
+    restart: always
+
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+
+  consumer:
+    depends_on:
+      - rabbitmq
+      - redis
+    image: consumer:v1
+    links:
+      - "rabbitmq:rabbitmq-host"
+      - "redis:redis-host"
+    restart: always
+
+  dashboard:
+    depends_on:
+      - redis  
+    image: dashboard:v1
+    ports:
+      - "5001:5001"
+    links:
+      - "redis:redis-host"
+    restart: always
