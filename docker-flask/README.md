@@ -37,5 +37,5 @@ docker exec -ti <container_id> /bin/bash
 
 To delete the container
 ```
-docker image rm -f <container_id>
+docker container rm -f <container_id>
 ```
