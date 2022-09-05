@@ -1,5 +1,5 @@
 # this is an official Python runtime, used as the parent image
-FROM python:3.8
+FROM python:3
 
 RUN mkdir /app
 
