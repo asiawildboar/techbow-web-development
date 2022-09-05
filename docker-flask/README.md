@@ -17,7 +17,7 @@ docker rmi <image_id>
 
 To run the flask app in docker and open browser at localhost:5000 to view the web app
 ```
-docker run -p 5000:5000 web
+docker run -p 5001:5001 -d web
 ```
   
 To check the container of the flask app

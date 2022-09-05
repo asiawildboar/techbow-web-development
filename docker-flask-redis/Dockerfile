@@ -12,7 +12,7 @@ ADD . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # unblock port 5000 for the Flask app to run on
-EXPOSE 5000
+EXPOSE 5001
 
 # execute the Flask app
 CMD ["python", "app.py"]

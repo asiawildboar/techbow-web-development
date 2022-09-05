@@ -17,7 +17,7 @@ docker run --name redis -p 6379:6379 -d redis:latest
 
 Deploy a docker contains the web app.
 ```
-docker run -p 5000:5000 --link redis:redis-host -d --name web web:v1
+docker run -p 5001:5001 --link redis:redis-host -d --name web web:v1
 ```
 
 Check the host setting in webapp from docker container.
@@ -27,9 +27,9 @@ cat /etc/hosts
 ```
 
 Then we can visit the API using the following
- - http://localhost:5000/
- - http://localhost:5000/set?key=A&value=1
- - http://localhost:5000/get?key=A
+ - http://localhost:5001/
+ - http://localhost:5001/set?key=A&value=1
+ - http://localhost:5001/get?key=A
 
 Check data in redis from docker container.
 ```
