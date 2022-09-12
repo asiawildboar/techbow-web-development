@@ -34,16 +34,16 @@ Reference: https://www.rabbitmq.com/tutorials/tutorial-one-python.html
 docker build -t producer:v1 .
 ```
 
-To run the flask app in docker and open browser at localhost:5000 to view the web app
+To run the flask app in docker and open browser at localhost:5001 to view the web app
 ```
-docker run -p 5000:5000 --link rabbitmq:rabbitmq-host -d producer:v1
+docker run -p 5001:5001 --link rabbitmq:rabbitmq-host -d producer:v1
 ```
 
 ### Monitoring
 Check the following urls of producer service, verify the behavior
- - http://localhost:5000/
- - http://localhost:5000/temperature/60
- - http://localhost:5000/temperature/101
+ - http://localhost:5001/
+ - http://localhost:5001/temperature/60
+ - http://localhost:5001/temperature/101
 
 Check the rabbitmq dashboard, verify the behavior
  - http://localhost:15672/#/
