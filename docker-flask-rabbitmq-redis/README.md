@@ -100,11 +100,11 @@ docker build -t dashboard:v1 .
 
 To run the consumer in docker and open browser at localhost:5001 to view the dashboard api
 ```
-docker run -p 5001:5001 --link redis:redis-host -d --name dashboard dashboard:v1
+docker run -p 5002:5002 --link redis:redis-host -d --name dashboard dashboard:v1
 ```
 
 ### Verfication
-http://localhost:5001/
+http://localhost:5002/
 
 
 ## Step 6: Dockercompose to organize above services together
