@@ -98,7 +98,7 @@ Check the rabbitmq dashboard
 docker build -t dashboard:v1 .
 ```
 
-To run the consumer in docker and open browser at localhost:5001 to view the dashboard api
+To run the consumer in docker and open browser at localhost:5002 to view the dashboard api
 ```
 docker run -p 5002:5002 --link redis:redis-host -d --name dashboard dashboard:v1
 ```
