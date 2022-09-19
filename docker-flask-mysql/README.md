@@ -81,7 +81,7 @@ docker image ls
 
 Deploy a docker contains the web app.
 ```
-docker run -p 5000:5000 --link mysql:mysql-host -d --name web-mysql web-mysql:v1
+docker run -p 5001:5001 --link mysql:mysql-host -d --name web-mysql web-mysql:v1
 ```
 
 Check the host setting in webapp from docker container.
