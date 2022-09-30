@@ -23,3 +23,6 @@
  - [Optional] Simplify RESTful API development using Flask-restful
  - [Optional] Simplify storage with Flask-SQLALchemy
  - [Optional] Orchestrate Docker using Kubernete
+
+## Set up environment
+Docker is the only environment you need: https://docs.docker.com/get-docker/
