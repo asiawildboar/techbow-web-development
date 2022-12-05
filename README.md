@@ -7,6 +7,9 @@
  - Identify, formulate, and solve common engineering problems
  - Apply engineering design to produce solutions that meet specified needs
 
+## Set up environment
+Docker is the only environment you need: https://docs.docker.com/get-docker/
+
 ## Materials
  - [Slides and other documents](https://drive.google.com/drive/u/1/folders/1Onii4gx7GAqEvbc-CKbQSsYs0qaRCklK?usp=sharing)
  - [Codebase on Github (this page)](https://github.com/asiawildboar/techbow-web-development)
@@ -23,6 +26,3 @@
  - [Optional] Simplify RESTful API development using Flask-restful
  - [Optional] Simplify storage with Flask-SQLALchemy
  - [Optional] Orchestrate Docker using Kubernete
-
-## Set up environment
-Docker is the only environment you need: https://docs.docker.com/get-docker/
