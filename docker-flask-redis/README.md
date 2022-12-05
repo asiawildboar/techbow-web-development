@@ -10,6 +10,11 @@ To check the image we just build
 docker image ls
 ```
 
+Fetch docker image `redis` from docker hub
+```
+docker pull redis
+```
+
 Fetch a docker contains redis remotely and create a container. -d means run as daemon. -p means the port
 ```
 docker run --name redis -p 6379:6379 -d redis:latest
