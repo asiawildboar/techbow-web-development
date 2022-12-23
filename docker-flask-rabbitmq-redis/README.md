@@ -6,6 +6,10 @@
  - consumer: flask with redis
  - introduce docker-compose
 
+## Architecture
+<img width="771" alt="Screenshot 2022-12-23 at 12 30 17 PM" src="https://user-images.githubusercontent.com/95584914/209271206-96a2f340-b7f0-4978-bbdf-b582b7e5f1ad.png">
+
+
 ## Step 1: Set up RabbitMQ
 
 ### Bring up RabbitMQ
