@@ -26,26 +26,5 @@ def get():
 def hello():
     return Response("Hi from your Flask app running in your Docker container!")
 
-@app.route("/login")
-def login():
-    username = request.args.get("username")
-    password = request.args.get("password")
-    print("...talk to mysql to authenticate user")
-    session_id = hash(username)
-    redis_client.set(session_id, username)
-    redis_client.expire(session_id, 20)
-    return "login success" + str(session_id)
-
-@app.route("/loginBySession")
-def loginBySession():
-    session_id = request.args.get("session_id")
-    username = request.args.get("username")
-    username_retrieved = redis_client.get(session_id)
-    if username_retrieved is None:
-        return "session expired"
-    if username == username_retrieved:
-        return "session not matched"
-    return "login success"
-
 if __name__ == "__main__":
     app.run("0.0.0.0", port=5001, debug=True)
