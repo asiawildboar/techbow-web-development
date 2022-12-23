@@ -77,7 +77,7 @@ Reference: https://www.rabbitmq.com/tutorials/tutorial-one-python.html
 docker build -t consumer:v1 .
 ```
 
-To run the consumer in docker and open browser at localhost:5000 to view the web app
+To run the consumer in docker
 ```
 docker run --link rabbitmq:rabbitmq-host --link redis:redis-host -d consumer:v1
 ```
