@@ -15,7 +15,7 @@ To delete the image
 docker image rm -f <image_id>
 ```
 
-To run the flask app in docker and open browser at localhost:5000 to view the web app
+To run the flask app in docker and open browser at localhost:5001 to view the web app
 ```
 docker run -p 5001:5001 -d web
 ```
